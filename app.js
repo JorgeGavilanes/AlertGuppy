@@ -7,7 +7,7 @@ const closeModalAlertGuppy = () => {
     });
 }
 
-export default class AlertGuppy{
+class AlertGuppy{
     constructor(obj){
         this.title = obj.title;
         this.icon = obj.icon;
