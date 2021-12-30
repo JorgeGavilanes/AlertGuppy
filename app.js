@@ -25,12 +25,18 @@ class AlertGuppy{
     get error(){
         return this.alertMsg("#FF988E","#E74C3C");
     }
+    //Para crear una nueva alerta creamos un getter y retornamos la funcion con dos colores en hexadecimal, el primero es mas claro que el segundo
+    get reading(){
+        return this.alertMsg("#8FFABD","#2ECC71");
+    }
 
     alertMsg(colorPrimary, colorSecondary){
         const iconsList = {
+            //si desea agregar mas iconos tendria que pegar la ruta del json en lordicon
             error : "https://cdn.lordicon.com/zpmqckup.json",
             warning : "https://cdn.lordicon.com/tdrtiskw.json",
-            success : "https://cdn.lordicon.com/tfosrbcn.json"
+            success : "https://cdn.lordicon.com/tfosrbcn.json",
+            reading : "https://cdn.lordicon.com/wxnxiano.json"
         }
         const containerAG = document.createElement("div"),
               boxAG = document.createElement("div"),

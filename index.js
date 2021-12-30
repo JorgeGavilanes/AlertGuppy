@@ -22,3 +22,14 @@ function fallido(){
     });
     mensaje.error();
 };
+//se crea una funcion el cual se llamara en el archivo
+function leyendo(){
+    //se instancia la clase AlertGuppy y se pasan los argumentos en formato de objeto
+    const mensaje = new AlertGuppy({
+        title: 'Im reading',
+        text : 'This book is amazing',
+        icon : 'reading'
+    });
+    //se pide el get
+    mensaje.reading();
+}
