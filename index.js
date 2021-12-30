@@ -1,34 +1,34 @@
-function advertencia(){
+function advertencia(title, text, icon){
     const mensaje = new AlertGuppy({
-        title: 'Warning!',
-        text: 'Please, check your status',
-        icon: 'warning'
+        title,
+        text,
+        icon
     });
     mensaje.warning();
 };
-function valido(){
+function valido(title, text, icon){
     const mensaje = new AlertGuppy({
-        title: 'Success!',
-        text: 'Your data its ok :3',
-        icon: 'success'
+        title,
+        text,
+        icon
     });
     mensaje.success();
 };
-function fallido(){
+function fallido(title, text, icon){
     const mensaje = new AlertGuppy({
-        title: 'Error!',
-        text: 'Please, logout right now',
-        icon: 'error'
+        title,
+        text,
+        icon
     });
     mensaje.error();
 };
 //se crea una funcion el cual se llamara en el archivo
-function leyendo(){
+function leyendo(title, text, icon){
     //se instancia la clase AlertGuppy y se pasan los argumentos en formato de objeto
     const mensaje = new AlertGuppy({
-        title: 'Im reading',
-        text : 'This book is amazing',
-        icon : 'reading'
+        title,
+        text,
+        icon
     });
     //se pide el get
     mensaje.reading();
